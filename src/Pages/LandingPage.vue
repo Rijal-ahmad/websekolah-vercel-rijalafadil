@@ -1,19 +1,44 @@
-
 <template>
-    <main>
         <section class="hero">
             <h1>selamat Datang di lah onlineshop</h1>
             <p>Belanja Gampang dapat uang susah</p>
+            
+            <video controls width="480" muted loop>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                browser kamu tidak mendukung pemutaran video ini
+            </video>
+            <RouterLink to="/Product"><button>lihat produk</button></RouterLink>
         </section>
-
-        <video controls width="480" muted loop>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-            browser kamu tidak mendukung pemutaran video ini
-        </video>
-        <RouterLink to="/Product"><button>lihat produk</button></RouterLink>
-    </main>
+        <section class="Features">
+            <FeatureCard
+                v-for="feature in features"
+                :key="feature.title"
+                :icon="feature.icon"
+                :title="feature.title"
+                :description="feature.description"
+            />
+        </section>
 </template>
-<script>
+<script setup>
+import FeatureCard from '../components/FeatureCard.vue';
+
+const features = [
+    {
+        icon: '🛒',
+        title: 'Belanja mudah',
+        description: 'Temukan berbagai produk dengan cepat dan mudah.'
+    },
+    {
+        icon: '🚚',
+        title: 'Pengiriman cepat',
+        description: 'Pesanan dikirim dengan aman sampai ke tujuan.'
+    },
+    {
+        icon: '💳',
+        title: 'Pembayaran aman',
+        description: 'Nikmati proses pembayaran yang praktis dan terpercaya.'
+    }
+];
 
 </script>
 
@@ -47,4 +72,5 @@
         margin: 15px auto;
 
     }
+    
 </style>

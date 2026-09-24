@@ -3,7 +3,8 @@
         <h2> lahshop- Onlineshop</h2>
         <RouterLink to="/Landing">Landing</RouterLink> |
         <RouterLink to="/Product">Product</RouterLink> |
-        <RouterLink to="/About">About</RouterLink>
+        <RouterLink to="/About">About</RouterLink> |
+        <RouterLink to="/Contact">Contact</RouterLink>
         <hr />
         </nav>
         
