@@ -8,6 +8,10 @@
 </template>
 <script setup>
 defineProps({
+    id: {
+        type: Number,
+        default: 0
+    },
     name: {
         type: String,
         default: 'Nama Anggota'
@@ -22,3 +26,16 @@ defineProps({
     }
 })
 </script>
+<style scoped>
+.TeamCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(27, 238, 220);
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0,0.15);
+    border-radius: 10px;
+}
+</style>

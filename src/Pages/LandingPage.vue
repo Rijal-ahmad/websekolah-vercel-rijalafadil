@@ -46,7 +46,7 @@ const features = [
  .card {
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: rgb(4,);
     padding: 30px;
     gap: 10px;
     text-align: left;

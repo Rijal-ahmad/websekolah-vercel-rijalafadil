@@ -21,3 +21,15 @@ defineProps ({
     }
 })
 </script>
+<style scoped>
+.FeatureCard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4, 95, 12);
+    padding: 30px;
+    gap: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0,0.15);
+    border-radius: 10px;
+}
+</style>
