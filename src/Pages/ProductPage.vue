@@ -10,7 +10,9 @@ const daftarProduk = [
 
 <template>
     <main>
-        <h1>Produk Kami</h1>
+        <section class="Produk">
+            <h1 class="text-justify text-2xl justify-center">Produk Kami</h1>
+        </section>
         <div class="grid">
             <ProductCard 
                 v-for="produk in daftarProduk" 

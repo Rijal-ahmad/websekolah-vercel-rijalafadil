@@ -1,6 +1,6 @@
 <template>
         <section class="hero">
-            <h1>selamat Datang di lah onlineshop</h1>
+            <h1 class="text-2xl flex-col item-center">selamat Datang di lah onlineshop</h1>
             <p>Belanja Gampang dapat uang susah</p>
             
             <video controls width="480" muted loop>
@@ -46,7 +46,7 @@ const features = [
  .card {
     display: flex;
     flex-direction: column;
-    background-color: rgb(4,);
+    background-color: rgb(130, 130, 255);
     padding: 30px;
     gap: 10px;
     text-align: left;

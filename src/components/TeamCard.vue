@@ -31,7 +31,7 @@ defineProps({
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(27, 238, 220);
+    background-color: rgb(130, 130, 255);
     padding: 20px;
     gap: 10px;
     text-align: center;

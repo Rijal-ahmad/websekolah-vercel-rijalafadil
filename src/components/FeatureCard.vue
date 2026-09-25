@@ -1,5 +1,5 @@
 <template>
-    <div class="FeatureCard">
+    <div class="FeatureCard flex flex-col items-center">
         <div class="Feature-icon">{{ icon }}</div>
         <h3 class="title">{{ title }}</h3>
         <p class="description">{{ description }}</p>
@@ -25,7 +25,7 @@ defineProps ({
 .FeatureCard {
     display: flex;
     flex-direction: column;
-    background-color: rgb(4, 95, 12);
+    background-color: rgb(116, 116, 255);
     padding: 30px;
     gap: 10px;
     text-align: left;
